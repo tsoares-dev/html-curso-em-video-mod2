@@ -4,12 +4,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fontes em CSS</title>
+  <title>Fontes em CSS</title> <!--abaixo CSS local-->
+  <style> 
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      /*
+      Medidas absolutas: 
+      cm , mm, im (polegada), px*, pt, pc (paica)
+
+      em* (tamanho atual da fonte m), ex (altura x da fonte), rem (= em porem relativo ao root do body),
+      vw (largura da viewport), vh (altura da viewport), %
+      * recomendação da W3C
+      
+      1 in= 2,54cm tamanho geralmente de fonte 16px */
+      font-size: 1em;                                              
+      font-weight:normal;
+
+      /*PESO DA FONTE: WIGTH <LIGTER>*/
+    } 
+
+    h1 {
+      /* shorthan font
+      font-style font-weight font-size font-family 
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 3em;
+      font-family: 'work sans', sans-serif; 
+      */
+      font: italic bolder 3em 'Work Sans', sans-serif;
+    }
+
+
+    h2 {
+      /*font-family: 'Times New Roman', Times, serif;*/
+      font: bold 2em 'Work Sans', sans-serif;
+    }
+  </style>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <h1>Trabalhando com fontes</h1>
+  <h1>Trabalhando com fontes</h1> <!-- <style> CSS inline-->
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam libero perferendis eos? Hic, deserunt? Quod hic eius ut, aliquam voluptatum voluptates perspiciatis tenetur iste doloribus iusto mollitia commodi autem magnam!
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus enim expedita cum aliquam sequi veniam iure, at ad praesentium, impedit consectetur necessitatibus excepturi inventore atque, ducimus explicabo est. Odit!</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eaque autem in repellendus corporis totam sunt aspernatur tempora ipsa ipsam recusandae natus eos soluta, consequuntur nihil vitae facilis! Obcaecati, nostrum.</p>
